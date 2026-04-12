@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Nitin Kumar - AI Automation Developer & Chatbot Engineer specializing in production-grade automation pipelines." />
+  <title>Nitin Kumar | AI Automation Developer</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+  
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+<body class="dark-theme">
+  <!-- Glowing Cursor -->
+  <div class="cursor-glow"></div>
+
+  <!-- Background Animated Layer -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo">Nitin</div>
+      <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="nav-actions">
+        <div class="theme-dropdown">
+          <i class="fa-solid fa-palette theme-icon"></i>
+          <div class="theme-menu">
+            <div class="theme-option active" data-theme="cyberpunk"><span class="color-dot cyberpunk"></span> Cyberpunk</div>
+            <div class="theme-option" data-theme="matrix"><span class="color-dot matrix"></span> Matrix</div>
+            <div class="theme-option" data-theme="synthwave"><span class="color-dot synthwave"></span> Synthwave</div>
+            <div class="theme-option" data-theme="light"><span class="color-dot light"></span> Light Mode</div>
+          </div>
+        </div>
+        <a href="https://acrobat.adobe.com/id/urn:aaid:sc:AP:5b60b90b-424a-460a-a3e0-277fe90a4302" target="_blank" class="btn-outline nav-resume">Resume</a>
+        <div class="hamburger">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section id="home" class="hero">
+      <div class="hero-content reveal">
+        <div class="profile-container">
+          <div class="profile-glow"></div>
+          <img src="https://i.ibb.co/MxHWvq7K/nitinsimage.png" alt="Nitin Kumar" class="profile-img" onerror="this.src='https://ui-avatars.com/api/?name=Nitin+Kumar&background=0D0D0D&color=00F0FF&size=200'"/>
+        </div>
+        <h1 class="glitch" data-text="Hi, I'm Nitin Kumar">Hi, I'm <span class="text-gradient">Nitin Kumar</span></h1>
+        <div class="typewriter-container">
+          <span class="typewriter"></span><span class="cursor"></span>
+        </div>
+        <p class="tagline">I build intelligent automation systems that save time, reduce effort, and scale businesses.</p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn-primary glow-btn">
+            View My Work <i class="fas fa-arrow-right"></i>
+          </a>
+          <a href="#contact" class="btn-secondary">
+            Contact Me
+          </a>
+        </div>
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/nitin-sharma-33baa8327" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://github.com/nitin-kumar" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="mailto:nitingaur72817@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <div class="mouse"></div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="about section-padding">
+      <div class="section-title reveal">
+        <h2>About <span class="text-gradient">Me</span></h2>
+        <div class="title-underline"></div>
+      </div>
+      <div class="about-container">
+        <div class="about-text reveal left">
+          <p>
+            I'm a BCA student at Mohanlal Sukhadia University, Udaipur, specializing in AI automation and workflow engineering. I build production-grade automation pipelines using <strong>n8n</strong>, <strong>Make.com</strong>, and <strong>Zapier</strong>, and deploy AI-powered chatbots on WhatsApp, Telegram, and the web using OpenAI and Gemini APIs.
+          </p>
+          <p>
+            My project <strong>Sehatra</strong> — an AI-driven rural telemedicine bot — was selected at the <em>Smart India Hackathon 2025</em> national level, demonstrating my commitment to using technology for impactful solutions.
+          </p>
+        </div>
+        <div class="about-skills reveal right">
+          <h3>My Tech Stack</h3>
+          <div class="skills-grid">
+            <div class="skill-badge"><i class="fab fa-python skill-icon"></i> Python</div>
+            <div class="skill-badge"><i class="fas fa-robot skill-icon"></i> n8n</div>
+            <div class="skill-badge"><i class="fas fa-brain skill-icon"></i> OpenAI API</div>
+            <div class="skill-badge"><i class="fas fa-gem skill-icon"></i> Gemini API</div>
+            <div class="skill-badge"><i class="fas fa-link skill-icon"></i> LangChain</div>
+            <div class="skill-badge"><i class="fas fa-magic skill-icon"></i> Make.com</div>
+            <div class="skill-badge"><i class="fas fa-bolt skill-icon"></i> Zapier</div>
+            <div class="skill-badge"><i class="fab fa-whatsapp skill-icon"></i> WA Business API</div>
+            <div class="skill-badge"><i class="fab fa-js skill-icon"></i> JavaScript</div>
+            <div class="skill-badge"><i class="fab fa-node-js skill-icon"></i> Node.js</div>
+            <div class="skill-badge"><i class="fas fa-server skill-icon"></i> FastAPI</div>
+            <div class="skill-badge"><i class="fab fa-html5 skill-icon"></i> HTML/CSS</div>
+            <div class="skill-badge"><i class="fab fa-figma skill-icon"></i> Figma</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="projects section-padding">
+      <div class="section-title reveal">
+        <h2>Featured <span class="text-gradient">Projects</span></h2>
+        <div class="title-underline"></div>
+      </div>
+      <div class="projects-grid">
+        
+        <!-- Project 1: Sehatra -->
+        <div class="project-card featured-project reveal tilt">
+          <div class="card-glow"></div>
+          <div class="project-tag"><i class="fas fa-trophy highlight-icon"></i> SIH 2025 National Level</div>
+          <div class="project-content">
+            <h3 class="project-title">Sehatra (AI Rural Healthcare Bot)</h3>
+            <p class="project-desc">
+              WhatsApp-based telemedicine bot using Gemini LLM for rural healthcare. Handles 100+ medical scenarios, real-time pharmacy info, doctor consultation, government schemes — all in one WhatsApp thread. Includes offline toll-free support and multilingual interface.
+            </p>
+            <div class="tech-tags">
+              <span>WhatsApp API</span><span>Gemini LLM</span><span>Webhook</span><span>Speech-to-Text</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="btn-text">View Details <i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card reveal tilt" style="transition-delay: 0.1s;">
+          <div class="card-glow"></div>
+          <div class="project-content">
+            <h3 class="project-title">WhatsApp AI Agent</h3>
+            <p class="project-desc">
+              AI-powered WhatsApp bot via n8n + Gemini + OpenAI handling 50+ daily conversations with persistent memory and context-aware multi-turn responses. Integrated with Google Sheets & Docs.
+            </p>
+            <div class="tech-tags">
+              <span>n8n</span><span>Gemini</span><span>OpenAI</span><span>Webhooks</span><span>Google Sheets</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="btn-text">View Details <i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card reveal tilt" style="transition-delay: 0.2s;">
+          <div class="card-glow"></div>
+          <div class="project-content">
+            <h3 class="project-title">AI Video Automation System</h3>
+            <p class="project-desc">
+              End-to-end automated pipeline for video script generation and auto-posting to Instagram & TikTok. Reduced content publishing time by 80%. Publishes 10+ posts/week hands-free.
+            </p>
+            <div class="tech-tags">
+              <span>n8n</span><span>OpenAI API</span><span>IG API</span><span>TikTok API</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="btn-text">View Details <i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card reveal tilt" style="transition-delay: 0.3s;">
+          <div class="card-glow"></div>
+          <div class="project-content">
+            <h3 class="project-title">Downtime Monitoring System</h3>
+            <p class="project-desc">
+              Automated uptime monitoring for 15+ websites with real-time alerts via Gmail, Telegram & Slack. Response time under 2 minutes. Weekly dashboard reporting via Google Sheets.
+            </p>
+            <div class="tech-tags">
+              <span>n8n</span><span>HTTP</span><span>Gmail</span><span>Telegram</span><span>Slack</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="btn-text">View Details <i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="project-card reveal tilt" style="transition-delay: 0.4s;">
+          <div class="card-glow"></div>
+          <div class="project-content">
+            <h3 class="project-title">Telegram AI Chatbot</h3>
+            <p class="project-desc">
+              Real-time AI chatbot using OpenAI API + LangChain with tool-use and memory components for intelligent multi-step contextual responses.
+            </p>
+            <div class="tech-tags">
+              <span>Python</span><span>OpenAI</span><span>LangChain</span><span>Telegram API</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="btn-text">View Details <i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ACHIEVEMENTS & EDUCATION ROW -->
+    <section class="achievements-edu section-padding">
+      <div class="split-container">
+        <!-- Achievements -->
+        <div id="achievements" class="achieve-col reveal left">
+          <div class="section-title left-align">
+            <h2>Milestones & <span class="text-gradient">Awards</span></h2>
+          </div>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-dot"><i class="fas fa-trophy"></i></div>
+              <div class="timeline-content">
+                <h4>Smart India Hackathon 2025</h4>
+                <div class="timeline-meta">National Level Finalist</div>
+                <p>Selected at the national level for <strong>Sehatra</strong> (AI Rural Telemedicine Solution), standing out among thousands of applicants for impactful AI use.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Education -->
+        <div id="education" class="edu-col reveal right">
+          <div class="section-title left-align">
+            <h2>My <span class="text-gradient">Education</span></h2>
+          </div>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-dot"><i class="fas fa-graduation-cap"></i></div>
+              <div class="timeline-content">
+                <h4>Bachelor of Computer Applications (BCA)</h4>
+                <div class="timeline-meta">2025 – 2028 | Udaipur, Rajasthan</div>
+                <p>Mohanlal Sukhadia University.<br>Focusing on foundational computer science and expanding practical expertise in AI and automation architectures.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="contact section-padding">
+      <div class="section-title reveal">
+        <h2>Let's Build <span class="text-gradient">Something Amazing</span></h2>
+        <div class="title-underline"></div>
+      </div>
+      <div class="contact-container reveal fade-up">
+        <div class="contact-info">
+          <div class="contact-card">
+            <div class="icon-wrap"><i class="fas fa-envelope"></i></div>
+            <h4>Email</h4>
+            <a href="mailto:nitingaur72817@gmail.com">nitingaur72817@gmail.com</a>
+          </div>
+          <div class="contact-card">
+            <div class="icon-wrap"><i class="fas fa-phone-alt"></i></div>
+            <h4>Phone</h4>
+            <a href="tel:+919887977456">+91 9887977456</a>
+          </div>
+          <div class="contact-card">
+            <div class="icon-wrap"><i class="fas fa-map-marker-alt"></i></div>
+            <h4>Location</h4>
+            <p>Udaipur, Rajasthan, India</p>
+          </div>
+        </div>
+        <form class="contact-form" onsubmit="event.preventDefault(); alert('Message sent successfully!');">
+          <div class="form-group">
+            <input type="text" id="name" required placeholder="Your Name">
+            <div class="input-glow"></div>
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" required placeholder="Your Email">
+            <div class="input-glow"></div>
+          </div>
+          <div class="form-group">
+            <textarea id="message" rows="5" required placeholder="Tell me about your project..."></textarea>
+            <div class="input-glow"></div>
+          </div>
+          <button type="submit" class="btn-primary glow-btn submit-btn">
+            Send Message <i class="fas fa-paper-plane"></i>
+          </button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="logo">Nitin</div>
+      <p>&copy; 2026 Nitin Kumar. All rights reserved.</p>
+      <div class="social-links footer-socials">
+        <a href="https://www.linkedin.com/in/nitin-sharma-33baa8327" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://github.com/nitin-kumar" target="_blank"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
