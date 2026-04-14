@@ -20,8 +20,10 @@
 <body class="dark-theme">
   <!-- Glowing Cursor -->
   <div class="cursor-glow"></div>
+
   <!-- Background Animated Layer -->
   <canvas id="bg-canvas"></canvas>
+
   <!-- Navigation -->
   <nav class="navbar">
     <div class="nav-container">
@@ -51,6 +53,7 @@
       </div>
     </div>
   </nav>
+
   <main>
     <!-- HERO SECTION -->
     <section id="home" class="hero">
@@ -82,6 +85,7 @@
         <div class="mouse"></div>
       </div>
     </section>
+
     <!-- ABOUT SECTION -->
     <section id="about" class="about section-padding">
       <div class="section-title reveal">
@@ -117,6 +121,7 @@
         </div>
       </div>
     </section>
+
     <!-- PROJECTS SECTION -->
     <section id="projects" class="projects section-padding">
       <div class="section-title reveal">
@@ -142,6 +147,7 @@
             </div>
           </div>
         </div>
+
         <!-- Project 2 -->
         <div class="project-card reveal tilt" style="transition-delay: 0.1s;">
           <div class="card-glow"></div>
@@ -159,6 +165,7 @@
             </div>
           </div>
         </div>
+
         <!-- Project 3 -->
         <div class="project-card reveal tilt" style="transition-delay: 0.2s;">
           <div class="card-glow"></div>
@@ -176,6 +183,7 @@
             </div>
           </div>
         </div>
+
         <!-- Project 4 -->
         <div class="project-card reveal tilt" style="transition-delay: 0.3s;">
           <div class="card-glow"></div>
@@ -193,6 +201,7 @@
             </div>
           </div>
         </div>
+
         <!-- Project 5 -->
         <div class="project-card reveal tilt" style="transition-delay: 0.4s;">
           <div class="card-glow"></div>
@@ -210,8 +219,10 @@
             </div>
           </div>
         </div>
+
       </div>
     </section>
+
     <!-- ACHIEVEMENTS & EDUCATION ROW -->
     <section class="achievements-edu section-padding">
       <div class="split-container">
@@ -231,6 +242,7 @@
             </div>
           </div>
         </div>
+
         <!-- Education -->
         <div id="education" class="edu-col reveal right">
           <div class="section-title left-align">
@@ -249,6 +261,7 @@
         </div>
       </div>
     </section>
+
     <!-- CONTACT SECTION -->
     <section id="contact" class="contact section-padding">
       <div class="section-title reveal">
@@ -273,10 +286,9 @@
             <p>Udaipur, Rajasthan, India</p>
           </div>
         </div>
-        <form action="https://formsubmit.co/nitingaur72817@gmail.com" method="POST" class="contact-form">
-          <!-- Disable Captcha and default Thanks page for seamless experience -->
+        <form id="contactForm" class="contact-form">
+          <!-- Disable Captcha for seamless experience -->
           <input type="hidden" name="_captcha" value="false">
-          <input type="hidden" name="_next" value="https://nitinportfolio.vercel.app">
           
           <div class="form-group">
             <input type="text" id="name" name="name" required placeholder="Your Name">
@@ -297,6 +309,7 @@
       </div>
     </section>
   </main>
+
   <footer>
     <div class="footer-content">
       <div class="logo">Nitin</div>
@@ -307,7 +320,7 @@
       </div>
     </div>
   </footer>
+
   <script type="module" src="/src/main.js"></script>
 </body>
 </html>
-
