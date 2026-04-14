@@ -1,7 +1,5 @@
 import './style.css';
-
 document.addEventListener('DOMContentLoaded', () => {
-
   // 1. Custom Cursor Glow
   const cursor = document.querySelector('.cursor-glow');
   document.addEventListener('mousemove', (e) => {
@@ -10,21 +8,18 @@ document.addEventListener('DOMContentLoaded', () => {
       cursor.style.top = e.clientY + 'px';
     }
   });
-
   document.addEventListener('mousedown', () => {
     if(cursor) {
       cursor.style.width = '350px';
       cursor.style.height = '350px';
     }
   });
-
   document.addEventListener('mouseup', () => {
     if(cursor) {
       cursor.style.width = '400px';
       cursor.style.height = '400px';
     }
   });
-
   // 2. Card Hover Glow Effect
   const cards = document.querySelectorAll('.project-card');
   cards.forEach(card => {
@@ -36,7 +31,6 @@ document.addEventListener('DOMContentLoaded', () => {
       card.style.setProperty('--mouse-y', `${y}px`);
     });
   });
-
   // 3. Typewriter Effect
   const texts = [
     "AI Automation Developer",
@@ -80,7 +74,6 @@ document.addEventListener('DOMContentLoaded', () => {
   }
   
   if(typeZone) type();
-
   // 4. Scroll Reveal
   const reveals = document.querySelectorAll('.reveal');
   const revealOptions = {
@@ -99,7 +92,6 @@ document.addEventListener('DOMContentLoaded', () => {
   reveals.forEach(reveal => {
     revealObserver.observe(reveal);
   });
-
   // 5. Navbar background on scroll
   const navbar = document.querySelector('.navbar');
   window.addEventListener('scroll', () => {
@@ -109,7 +101,22 @@ document.addEventListener('DOMContentLoaded', () => {
       navbar.classList.remove('scrolled');
     }
   });
-
+  // 8. Hamburger Mobile Menu
+  const hamburger = document.querySelector('.hamburger');
+  const navLinks = document.querySelector('.nav-links');
+  
+  if(hamburger && navLinks) {
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+    
+    // Close menu when clicking a link
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+      });
+    });
+  }
   // 7. Theme Switcher Logic
   let primaryRGB = '0, 240, 255'; // default
   
@@ -117,7 +124,6 @@ document.addEventListener('DOMContentLoaded', () => {
      primaryRGB = getComputedStyle(document.documentElement).getPropertyValue('--primary-rgb').trim() || '0, 240, 255';
   }
   updateThemeColor(); // run once on load
-
   const themeDots = document.querySelectorAll('.theme-option');
   themeDots.forEach(dot => {
     dot.addEventListener('click', () => {
@@ -140,17 +146,14 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   });
-
   // 6. Network/Particle Canvas Background
   const canvas = document.getElementById('bg-canvas');
   if(canvas) {
     const ctx = canvas.getContext('2d');
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
-
     window.particlesArray = [];
     const numberOfParticles = Math.min(100, Math.floor(window.innerWidth / 15));
-
     class Particle {
       constructor() {
         this.x = Math.random() * canvas.width;
@@ -163,7 +166,6 @@ document.addEventListener('DOMContentLoaded', () => {
       update() {
         this.x += this.speedX;
         this.y += this.speedY;
-
         if (this.x < 0 || this.x > canvas.width) this.speedX *= -1;
         if (this.y < 0 || this.y > canvas.height) this.speedY *= -1;
       }
@@ -174,14 +176,12 @@ document.addEventListener('DOMContentLoaded', () => {
         ctx.fill();
       }
     }
-
     function init() {
       window.particlesArray = [];
       for (let i = 0; i < numberOfParticles; i++) {
         window.particlesArray.push(new Particle());
       }
     }
-
     function connect() {
       let opacityValue = 1;
       for (let a = 0; a < window.particlesArray.length; a++) {
@@ -201,7 +201,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       }
     }
-
     function animate() {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
       for (let i = 0; i < window.particlesArray.length; i++) {
@@ -211,13 +210,11 @@ document.addEventListener('DOMContentLoaded', () => {
       connect();
       requestAnimationFrame(animate);
     }
-
     window.addEventListener('resize', () => {
       canvas.width = window.innerWidth;
       canvas.height = window.innerHeight;
       init();
     });
-
     init();
     animate();
   }
