@@ -218,4 +218,31 @@ document.addEventListener('DOMContentLoaded', () => {
     init();
     animate();
   }
+  // 9. Contact Form AJAX Submit
+  const contactForm = document.getElementById('contactForm');
+  if (contactForm) {
+    contactForm.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const btn = contactForm.querySelector('.submit-btn');
+      const originalText = btn.innerHTML;
+      btn.innerHTML = 'Sending... <i class="fas fa-spinner fa-spin"></i>';
+      
+      const formData = new FormData(contactForm);
+      try {
+        const response = await fetch("https://formsubmit.co/ajax/nitingaur72817@gmail.com", {
+          method: "POST",
+          body: formData
+        });
+        if (response.ok) {
+          alert('Message sent successfully! Check your email soon.');
+          contactForm.reset();
+        } else {
+          alert('Failed to send message. Please try again.');
+        }
+      } catch(err) {
+        alert('An error occurred while sending the message.');
+      }
+      btn.innerHTML = originalText;
+    });
+  }
 });
